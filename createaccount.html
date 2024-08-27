@@ -7,6 +7,9 @@
     <style>
         *{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            margin: 0;
+            box-sizing: border-box;
         }
         header{
             display: flex;
@@ -49,30 +52,49 @@
             border-radius: 100px;
             color: #387F39;
         }
+
+        .card{
+            background-color: #ffffff;
+            padding: 20px;
+            width: 350px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        input{
+            width: 100%;
+            padding: 10px;  
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: none;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>LOGO</h1>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About us</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li><button onclick="gotonext()">Create account</button></li>
-        </ul>
-    </header>
-   <center>
-    <h1>Contact page</h1>
-   </center>
+    <h1>LOGO</h1>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <!-- <li><button onclick="gotonext()">Create account</button></li> -->
+    </ul>
+</header>
 
+<div style="display: flex; justify-content: center; height: 90vh; align-items: center;">
+    <div class="card">
+        <h2>Create Account</h2>
+        <label for="">Username</label>
+        <input type="text" placeholder="Enter your name">
 
-   <script>
-    function gotonext(){
-      window.location.href = "./createaccount.html";
-    }
+        <label for="">Email address</label>
+        <input type="text" placeholder="Enter your Email">
 
-  
-</script>
+        <label for="">passwordd</label>
+        <input type="text" placeholder="Enter your password">
+        <button style="width: 100%; border-radius: 10px;">Sign up</button>
+    </div>
+</div>
 </body>
 </html>
